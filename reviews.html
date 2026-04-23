@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re-Fresh Reviews & FAQ</title>
+    <meta
+      name="description"
+      content="Hear from Re-Fresh early testers and get answers to the most common questions."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Re-<span>Fresh</span></div>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="science.html">Science</a>
+        <a href="reviews.html" class="active">Reviews & FAQ</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
+      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- REVIEWS -->
+      <section class="section" id="reviews">
+        <div class="section__header section__header--center">
+          <h2>What early testers are saying.</h2>
+          <p>Real feedback from creators, students, and gamers.</p>
+        </div>
+        <div class="reviews">
+          <article class="review">
+            <p class="review__quote">
+              “Swapped this in for my third coffee of the day — the focus is real,
+              and I don’t feel wired.”
+            </p>
+            <p class="review__author">Alex • Product Designer</p>
+          </article>
+          <article class="review">
+            <p class="review__quote">
+              “Crisp Citrus feels like a grown-up soda. Great for late-night coding
+              without feeling gross after.”
+            </p>
+            <p class="review__author">Dev • CS Student</p>
+          </article>
+          <article class="review">
+            <p class="review__quote">
+              “I drink this on stream instead of random energy drinks. Tastes clean,
+              no sugar crash mid-session.”
+            </p>
+            <p class="review__author">Nova • Streamer</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="section__header section__header--center">
+          <h2>FAQ</h2>
+          <p>Quick answers to the most common questions.</p>
+        </div>
+        <div class="faq">
+          <details class="faq__item" open>
+            <summary>Is Re-Fresh sugar free?</summary>
+            <p>
+              Yes. Re-Fresh has zero sugar and only 10 calories per can. We use a
+              light, modern sweetness for a clean taste.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>How much caffeine is in a can?</summary>
+            <p>
+              Each can has 160mg of caffeine — about the same as a strong cup of
+              coffee, balanced with L-theanine for smooth focus.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Can I drink more than one can a day?</summary>
+            <p>
+              We recommend starting with one can and not exceeding two per day.
+              Everyone’s caffeine tolerance is different — listen to your body.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Where do you ship?</summary>
+            <p>
+              This is a demo front-end experience only. For a real launch, connect
+              this site to your e-commerce platform (Shopify, Stripe, etc.) and
+              configure shipping options.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="section--cta__inner">
+          <div>
+            <h2>Ready to join the next wave of energy?</h2>
+            <p>
+              Head to the Flavors page to build your first Re-Fresh box and see how
+              it fits your routine.
+            </p>
+          </div>
+          <button class="btn btn--primary btn--large" onclick="goToFlavors()">
+            Explore Flavors
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__brand">Re-<span>Fresh</span></div>
+          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact">
+            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
+            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
+            <li>Huddersfield, United Kingdom</li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Subscribe</h4>
+          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
+          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

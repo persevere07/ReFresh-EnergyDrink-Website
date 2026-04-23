@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re-Fresh Flavors – Build Your Stack</title>
+    <meta
+      name="description"
+      content="Explore Re-Fresh flavors and build your perfect energy stack."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Re-<span>Fresh</span></div>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html" class="active">Flavors</a>
+        <a href="science.html">Science</a>
+        <a href="reviews.html">Reviews & FAQ</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="nav__cta" onclick="goToFlavors()">Cart</button>
+      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__header section__header--center">
+          <h2>Pick your flavor. Start your stack.</h2>
+          <p>
+            Start with a mixed starter pack or lock in your favorite flavor. Cart is
+            stored in your browser so you can move between pages freely.
+          </p>
+        </div>
+      </section>
+
+      <div class="flavors-layout">
+        <div class="flavors-products">
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="starter">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Gemini_Generated_Image_l679jpl679jpl679.png" alt="Mixed Starter Pack" />
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__tag">Best for first-timers</div>
+                <h3>Mixed Starter Pack</h3>
+                <p class="product-card__subtitle">12 cans • 3 flavors</p>
+                <p class="product-card__price">$25.00</p>
+                <p class="product-card__description">
+                  Perfect for first-time customers. Try all three flavors and discover your favorite. 
+                  Each pack includes 4 cans of each flavor for a complete tasting experience.
+                </p>
+                <ul class="product-card__list">
+                  <li>4x Crisp Citrus Charge</li>
+                  <li>4x Midnight Berry</li>
+                  <li>4x Electric Lime</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Mixed Starter Pack"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Mixed Starter Pack"
+                    data-product-price="29"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="citrus">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Crisp Citrus Charge.png" alt="Crisp Citrus Charge" />
+              </div>
+              <div class="product-card__content">
+                <h3>Crisp Citrus Charge</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  A refreshing blend of lemon and lime that tastes like a premium sparkling soda. 
+                  Bright, clean, and energizing—perfect for morning starts or afternoon pick-me-ups.
+                </p>
+                <ul class="product-card__list">
+                  <li>Tastes like a sparkling lemon-lime soda</li>
+                  <li>Bright, clean finish</li>
+                  <li>160mg clean caffeine</li>
+                  <li>Zero sugar, 10 calories</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Crisp Citrus Charge"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Crisp Citrus Charge"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="berry">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Midnight Berry.png" alt="Midnight Berry" />
+              </div>
+              <div class="product-card__content">
+                <h3>Midnight Berry</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  Deep, rich berry flavor with hints of pomegranate. Perfect for late-night work sessions, 
+                  gaming marathons, or whenever you need sustained energy without the crash.
+                </p>
+                <ul class="product-card__list">
+                  <li>Dark berry with a hint of pomegranate</li>
+                  <li>Perfect for late sessions</li>
+                  <li>160mg clean caffeine</li>
+                  <li>Zero sugar, 10 calories</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Midnight Berry"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Midnight Berry"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="berry">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Solar Tropical Wave.png" alt="Midnight Berry" />
+              </div>
+              <div class="product-card__content">
+                <h3>Solar Tropical Wave</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  A sun-drenched explosion of ripe mango and golden pineapple with a kick of island citrus. It’s like a vacation in a can—delivering sunny, vibrant energy to power you through the midday slump.
+                </p>
+                <ul class="product-card__list">
+                  <li>Sweet mango with a tangy pineapple twist</li>
+                  <li>Summer vibes all year round</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Midnight Berry"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Midnight Berry"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="berry">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/Arctic Watermelon.png" alt="Midnight Berry" />
+              </div>
+              <div class="product-card__content">
+                <h3>Arctic Watermelon</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  Crisp, refreshing red watermelon with a cool, icy finish. This is our most thirst-quenching flavor yet, designed to cool you down after a workout or sharpen your senses when things heat up.
+                </p>
+                <ul class="product-card__list">
+                  <li>Juicy watermelon with a frost-like finish</li>
+                  <li>Ultra-hydrating mouthfeel</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Midnight Berry"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Midnight Berry"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section section--product">
+            <article class="product-card product-card--large" data-product-id="berry">
+              <div class="product-card__image product-card__image--large">
+                <img src="assets/White Peach Flow.png" alt="Midnight Berry" />
+              </div>
+              <div class="product-card__content">
+                <h3>White Peach Flow</h3>
+                <p class="product-card__subtitle">12 cans</p>
+                <p class="product-card__price">$27.00</p>
+                <p class="product-card__description">
+                  Smooth, velvety white peach nectar with a subtle floral aroma. A sophisticated, less acidic option that glides down easy. Ideal for getting into that creative flow state or powering through study sessions.
+                </p>
+                <ul class="product-card__list">
+                  <li>Soft, natural peach flavor</li>
+                  <li>Smooth drinking, zero bite</li>
+                </ul>
+                <div class="product-card__footer">
+                  <div class="quantity">
+                    <button class="quantity__btn" data-action="decrement">-</button>
+                    <input
+                      type="number"
+                      min="1"
+                      value="1"
+                      aria-label="Quantity for Midnight Berry"
+                    />
+                    <button class="quantity__btn" data-action="increment">+</button>
+                  </div>
+                  <button
+                    class="btn btn--primary product-card__btn"
+                    data-product-name="Midnight Berry"
+                    data-product-price="27"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <aside class="cart cart--sticky" id="cart">
+          <h3>Your Cart</h3>
+          <div class="cart__items" id="cartItems">
+            <p class="cart__empty">
+              Your cart is empty. Add a pack to get started.
+            </p>
+          </div>
+          <div class="cart__summary">
+            <div class="cart__row">
+              <span>Subtotal</span>
+              <span id="cartSubtotal">$0.00</span>
+            </div>
+            <p class="cart__hint">
+              Inclusive of taxes.
+            </p>
+            <button class="btn btn--primary btn--full" id="checkoutBtn">
+              Checkout
+            </button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__brand">Re-<span>Fresh</span></div>
+          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact">
+            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
+            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
+            <li>Huddersfield, United Kingdom</li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Subscribe</h4>
+          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
+          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

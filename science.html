@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Science of Re-Fresh – Focus, Hydration, Energy</title>
+    <meta
+      name="description"
+      content="See how Re-Fresh combines clean caffeine, electrolytes, and nootropics to keep you focused without the crash."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">Re-<span>Fresh</span></div>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="science.html" class="active">Science</a>
+        <a href="reviews.html">Reviews & FAQ</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
+      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__header">
+          <h2>The <span>science</span> behind the sip.</h2>
+          <!-- <p>
+            Re-Fresh is formulated to keep you locked in and hydrated — not
+            overcaffeinated and crashing.
+          </p> -->
+        </div>
+      </section>
+
+      <section class="section section--grid" id="science">
+        <div class="science__visual">
+          <img src="assets/Gemini_Generated_Image_l679jpl679jpl679 (3).png" alt="Re-Fresh Energy Drink" />
+        </div>
+        <div class="science">
+          <div class="science__card">
+            <h3>Smart caffeine curve</h3>
+            <p>
+              Our blend of green coffee bean caffeine and L-theanine smooths out your
+              energy curve, so you feel alert without the heart-racing jitters.
+            </p>
+          </div>
+          <div class="science__card">
+            <h3>Focus-forward stack</h3>
+            <p>
+              B3, B6, and B12 support your brain's natural energy metabolism, helping
+              you stay locked in on deep work or clutch plays.
+            </p>
+          </div>
+          <div class="science__card">
+            <h3>Stay hydrated, stay sharp</h3>
+            <p>
+              Caffeine is a mild diuretic — that's why we added electrolytes to help
+              balance it out and keep you feeling good over long sessions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2>How We Compare</h2>
+          <!-- <p>
+            See how Re-Fresh stands out from traditional energy drinks with our clean, focused energy formula.
+          </p> -->
+        </div>
+        
+        <div class="comparison-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Re-Fresh</th>
+                <th>Traditional Energy Drinks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Caffeine Source</td>
+                <td>Green coffee bean extract</td>
+                <td>Synthetic caffeine</td>
+              </tr>
+              <tr>
+                <td>Crash</td>
+                <td>No crash</td>
+                <td>Common crash</td>
+              </tr>
+              <tr>
+                <td>Electrolytes</td>
+                <td>Added for hydration</td>
+                <td>Often missing</td>
+              </tr>
+              <tr>
+                <td>Nootropics</td>
+                <td>Focus-enhancing blend</td>
+                <td>Not included</td>
+              </tr>
+              <tr>
+                <td>Sugar Content</td>
+                <td>Low or zero sugar options</td>
+                <td>High in sugar</td>
+              </tr>
+              <tr>
+                <td>Calories</td>
+                <td>5-10 per can</td>
+                <td>100+ per can</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="section--cta__inner">
+          <div>
+            <h2>Put the science to the test.</h2>
+            <p>
+              Try the Mixed Starter Pack and feel the difference between jittery
+              energy and clean focus.
+            </p>
+          </div>
+          <button class="btn btn--primary btn--large" onclick="goToFlavors()">
+            Build Your Box
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__section">
+          <div class="footer__brand">Re-<span>Fresh</span></div>
+          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact">
+            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
+            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
+            <li>Huddersfield, United Kingdom</li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Subscribe</h4>
+          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
+          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart</div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
