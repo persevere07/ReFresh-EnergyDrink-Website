@@ -1,193 +1,358 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Re-Fresh – Our Story</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>About Re-Fresh | Our Story & Mission</title>
+
     <meta
       name="description"
-      content="Learn about Re-Fresh Energy Drink and our mission to provide clean, sustainable energy."
+      content="Discover the story, mission, values, and clean-energy philosophy behind Re-Fresh Energy Drink."
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- ==================== HEADER ==================== -->
     <header class="nav">
-      <div class="nav__logo">Re-<span>Fresh</span></div>
-      <nav class="nav__links">
+      <div class="nav__logo">
+        Re-<span>Fresh</span>
+      </div>
+
+      <nav class="nav__links" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="flavors.html">Flavors</a>
         <a href="science.html">Science</a>
-        <a href="reviews.html">Reviews & FAQ</a>
-        <a href="about.html" class="active">About</a>
+        <a href="reviews.html">Reviews &amp; FAQ</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
       </nav>
-      <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
-      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
-        <span></span><span></span>
+
+      <button
+        type="button"
+        class="nav__cta"
+        onclick="goToFlavors()"
+      >
+        Shop Now
+      </button>
+
+      <button
+        type="button"
+        class="nav__menu"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
       </button>
     </header>
 
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main>
-      <section class="section">
+      <!-- Hero / Introduction -->
+      <section class="section section--hero">
         <div class="section__header section__header--center">
+          <p class="section__eyebrow">Our Story</p>
+
           <h1>About Re-Fresh</h1>
+
           <p>
-            We're on a mission to revolutionize the energy drink industry with
-            clean, sustainable energy that actually works.
+            We're on a mission to revolutionize the energy drink industry
+            with clean, sustainable energy that actually works.
           </p>
         </div>
       </section>
 
-      <section class="section">
+      <!-- About Content -->
+      <section class="section" aria-labelledby="about-heading">
         <div class="about-content">
-          <div class="about-section about-section--underline">
-            <h2>> Our Story</h2>
+
+          <!-- Our Story -->
+          <article class="about-section about-section--underline">
+            <h2 id="about-heading">&gt; Our Story</h2>
+
             <p>
               Re-Fresh was born from a simple frustration: why do energy
-              drinks have to be loaded with sugar, artificial ingredients, and
-              leave you crashing by 3PM? We set out to create something
-              different—a clean energy drink that powers your day without the
-              compromise.
+              drinks have to be loaded with sugar and artificial ingredients,
+              only to leave you crashing later in the day?
             </p>
+
+            <p>
+              We set out to create something different—a clean energy drink
+              designed to power your day without unnecessary compromise.
+            </p>
+
             <p>
               Founded in Huddersfield, UK, we're a team of health-conscious
               creators, athletes, and professionals who believe energy should
-              enhance your performance, not derail it. Every can of Re-Fresh is
-              crafted with precision, using only the highest quality ingredients
-              to deliver sustained focus and energy.
+              enhance your performance, not derail it.
             </p>
-          </div>
 
-          <div class="about-section about-section--underline">
-            <h2>> Our Mission</h2>
             <p>
-              To provide clean, sustainable energy that supports your lifestyle
-              without the sugar spikes, artificial additives, or energy crashes.
-              We're committed to transparency, quality, and helping you perform
-              at your best—whether that's in the office, gym, or wherever your
-              day takes you.
+              Every can of Re-Fresh is crafted with carefully selected
+              ingredients designed to provide sustained focus and energy.
             </p>
-          </div>
+          </article>
 
-          <div class="about-section about-section--underline">
-            <h2>> What Makes Us Different</h2>
+          <!-- Our Mission -->
+          <article class="about-section about-section--underline">
+            <h2>&gt; Our Mission</h2>
+
+            <p>
+              Our mission is to provide clean, sustainable energy that fits
+              into your lifestyle without unnecessary sugar spikes, artificial
+              additives, or energy crashes.
+            </p>
+
+            <p>
+              We're committed to transparency, quality, and helping you
+              perform at your best—whether you're in the office, at the gym,
+              or wherever your day takes you.
+            </p>
+          </article>
+
+          <!-- What Makes Us Different -->
+          <article class="about-section about-section--underline">
+            <h2>&gt; What Makes Us Different</h2>
+
             <ul class="about-list">
               <li>
-                <strong>Zero Sugar:</strong> No hidden sugars or artificial
-                sweeteners—just clean, natural flavor.
+                <strong>Zero Sugar:</strong>
+                No added sugar, with a focus on clean and refreshing flavor.
               </li>
+
               <li>
-                <strong>Clean Caffeine:</strong> 160mg from green coffee beans
-                for smooth, sustained energy without jitters.
+                <strong>Clean Caffeine:</strong>
+                160mg of caffeine from green coffee beans for sustained energy.
               </li>
+
               <li>
-                <strong>Electrolytes:</strong> Stay hydrated while you power
-                through your day.
+                <strong>Electrolytes:</strong>
+                Designed to complement your active lifestyle.
               </li>
+
               <li>
-                <strong>B-Vitamins:</strong> Support mental clarity and focus for
-                peak performance.
+                <strong>B-Vitamins:</strong>
+                Includes B-vitamins as part of our performance-focused formula.
               </li>
+
               <li>
-                <strong>Vegan & Gluten-Free:</strong> Made for everyone,
-                regardless of dietary preferences.
+                <strong>Vegan &amp; Gluten-Free:</strong>
+                Made with dietary preferences in mind.
               </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="about-section">
-            <h2>> Our Values</h2>
+          <!-- Our Values -->
+          <article class="about-section">
+            <h2>&gt; Our Values</h2>
+
             <p>
-              At Re-Fresh, we believe in doing things the right way. That means
-              quality ingredients, transparent labeling, sustainable practices,
-              and a commitment to your health and performance. We're not just
-              another energy drink—we're your partner in achieving your goals.
+              At Re-Fresh, we believe in doing things the right way. That
+              means focusing on quality ingredients, transparent labeling,
+              responsible practices, and a commitment to helping our customers
+              perform at their best.
             </p>
-          </div>
+
+            <p>
+              We're not just another energy drink. We're building a brand
+              centered around better choices, better performance, and a
+              fresher approach to everyday energy.
+            </p>
+          </article>
+
         </div>
       </section>
 
-      <section class="section section--map">
+      <!-- ==================== LOCATION ==================== -->
+      <section
+        class="section section--map"
+        aria-labelledby="location-heading"
+      >
         <div class="section__header section__header--center">
-          <h2>Find Us</h2>
-          <p>Visit us in Huddersfield, United Kingdom</p>
+          <p class="section__eyebrow">Our Location</p>
+
+          <h2 id="location-heading">Find Us</h2>
+
+          <p>
+            Visit us in Huddersfield, United Kingdom.
+          </p>
         </div>
+
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2366.8351500000004!2d-1.7897!3d53.6436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdd7e1b8a1b6b%3A0x3b3b3b3b3b3b3b3b!2sUniversity%20of%20Huddersfield!5e0!3m2!1sen!2suk!4v1698765432100!5m2!1sen!2suk"
             width="100%"
             height="450"
             style="border: 0"
-            allowfullscreen=""
+            allowfullscreen
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="University of Huddersfield Location"
+            title="Map showing the University of Huddersfield"
           ></iframe>
         </div>
-        <div class="map-info">
-          <p><strong>University of Huddersfield</strong></p>
-          <p>Queensgate, Huddersfield, HD1 3DH, United Kingdom</p>
-        </div>
+
+        <address class="map-info">
+          <p>
+            <strong>University of Huddersfield</strong>
+          </p>
+
+          <p>
+            Queensgate, Huddersfield, HD1 3DH,
+            United Kingdom
+          </p>
+        </address>
       </section>
     </main>
 
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
       <div class="footer__content">
-        <div class="footer__section">
-          <div class="footer__brand">Re-<span>Fresh</span></div>
-          <p class="footer__description">Clean energy for peak performance. Zero sugar, zero compromise.</p>
-        </div>
 
-        <div class="footer__section">
-          <h4 class="footer__heading">Quick Links</h4>
+        <!-- Brand -->
+        <section class="footer__section">
+          <div class="footer__brand">
+            Re-<span>Fresh</span>
+          </div>
+
+          <p class="footer__description">
+            Clean energy for peak performance.
+            Zero sugar, zero compromise.
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="footer__section">
+          <h2 class="footer__heading">Quick Links</h2>
+
           <ul class="footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="flavors.html">Flavors</a></li>
             <li><a href="science.html">Science</a></li>
-            <li><a href="reviews.html">Reviews & FAQ</a></li>
+            <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
-        </div>
+        </section>
 
-        <div class="footer__section">
-          <h4 class="footer__heading">Contact</h4>
+        <!-- Contact -->
+        <section class="footer__section">
+          <h2 class="footer__heading">Contact</h2>
+
           <ul class="footer__contact">
-            <li>Email: <a href="mailto:hello@refresh-energy.com">hello@refresh-energy.com</a></li>
-            <li>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></li>
-            <li>Huddersfield, United Kingdom</li>
-          </ul>
-        </div>
+            <li>
+              Email:
+              <a href="mailto:hello@refresh-energy.com">
+                hello@refresh-energy.com
+              </a>
+            </li>
 
-        <div class="footer__section">
-          <h4 class="footer__heading">Subscribe</h4>
-          <p class="footer__subscribe-text">Get updates on new flavors and exclusive offers</p>
-          <form class="footer__subscribe" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-            <input type="email" placeholder="Enter your email" class="footer__email-input" required />
-            <button type="submit" class="btn btn--primary">Subscribe</button>
+            <li>
+              Phone:
+              <a href="tel:+441234567890">
+                +44 123 456 7890
+              </a>
+            </li>
+
+            <li>
+              Huddersfield, United Kingdom
+            </li>
+          </ul>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="footer__section">
+          <h2 class="footer__heading">Subscribe</h2>
+
+          <p class="footer__subscribe-text">
+            Get updates on new flavors and exclusive offers.
+          </p>
+
+          <form
+            class="footer__subscribe"
+            id="subscribeForm"
+          >
+            <label
+              for="email"
+              class="sr-only"
+            >
+              Email address
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="footer__email-input"
+              autocomplete="email"
+              required
+            />
+
+            <button
+              type="submit"
+              class="btn btn--primary"
+            >
+              Subscribe
+            </button>
           </form>
-        </div>
+        </section>
+
       </div>
 
+      <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">© 2024 Re-Fresh Energy. All rights reserved.</p>
-        <div class="footer__legal">
+        <p class="footer__copyright">
+          &copy; 2026 Re-Fresh Energy. All rights reserved.
+        </p>
+
+        <nav
+          class="footer__legal"
+          aria-label="Legal navigation"
+        >
           <a href="#">Privacy Policy</a>
-          <span>•</span>
+          <span aria-hidden="true">•</span>
+
           <a href="#">Terms of Service</a>
-          <span>•</span>
+          <span aria-hidden="true">•</span>
+
           <a href="#">Shipping Policy</a>
-        </div>
+        </nav>
       </div>
     </footer>
 
-    <div class="toast" id="toast">Added to cart</div>
+    <!-- Toast Notification -->
+    <div
+      class="toast"
+      id="toast"
+      role="status"
+      aria-live="polite"
+    >
+      Added to cart
+    </div>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
   </body>
 </html>
+```
 
