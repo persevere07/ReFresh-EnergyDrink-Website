@@ -1,36 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Re-Fresh Flavors – Build Your Stack</title>
-    <meta
-      name="description"
-      content="Explore Re-Fresh flavors and build your perfect energy stack."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="nav">
-      <div class="nav__logo">Re-<span>Fresh</span></div>
-      <nav class="nav__links">
-        <a href="index.html">Home</a>
-        <a href="flavors.html" class="active">Flavors</a>
-        <a href="science.html">Science</a>
-        <a href="reviews.html">Reviews & FAQ</a>
-        <a href="about.html">About</a>
-      </nav>
-      <button class="nav__cta" onclick="goToFlavors()">Cart</button>
-      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
-        <span></span><span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Re-Fresh Flavors | Build Your Stack</title>
+
+  <meta
+    name="description"
+    content="Explore Re-Fresh energy drink flavors and build your perfect flavor stack."
+  />
+
+  <meta name="theme-color" content="#101010" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="nav">
+    <a
+      href="index.html"
+      class="nav__logo"
+      aria-label="Re-Fresh home"
+    >
+      Re-<span>Fresh</span>
+    </a>
+
+    <nav class="nav__links" id="mainNavigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="flavors.html" class="active" aria-current="page">
+        Flavors
+      </a>
+      <a href="science.html">Science</a>
+      <a href="reviews.html">Reviews &amp; FAQ</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="cart.html" class="nav__cta" aria-label="View shopping cart">
+        Cart
+      </a>
+
+      <button
+        type="button"
+        class="nav__menu"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
       </button>
-    </header>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="flavors-hero" aria-labelledby="flavorsTitle">
+      <div class="flavors-hero__content">
+        <p class="flavors-hero__eyebrow">FIND YOUR FAVORITE</p>
+
+        <h1 id="flavorsTitle">
+          Discover Your <span>Fresh</span> Flavor
+        </h1>
+
+        <p>
+          Explore exciting flavors, find your favorites, and build
+          your perfect Re-Fresh stack.
+        </p>
+
+        <a href="#flavors" class="hero__button">
+          Explore Flavors
+        </a>
+      </div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section id="flavors" class="flavors-section">
+      <div class="section-heading">
+        <p>THE FLAVOR COLLECTION</p>
+        <h2>Choose Your Flavor</h2>
+        <p>
+          Discover the Re-Fresh collection and find the flavor
+          that matches your vibe.
+        </p>
+      </div>
+
+      <!-- Add your flavor cards here -->
+      <div class="flavors-grid" id="flavorsGrid">
+        <!-- Example:
+        <article class="flavor-card">
+          <img
+            src="images/flavor-name.png"
+            alt="Re-Fresh flavor name"
+            loading="lazy"
+          />
+          <h3>Flavor Name</h3>
+          <p>A refreshing flavor for your day.</p>
+          <button type="button">Add to Stack</button>
+        </article>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="index.html" class="nav__logo">
+      Re-<span>Fresh</span>
+    </a>
+
+    <p>&copy; 2026 Re-Fresh. All rights reserved.</p>
+
+    <nav aria-label="Footer navigation">
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews &amp; FAQ</a>
+      <a href="science.html">Science</a>
+    </nav>
+  </footer>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const mainNavigation = document.getElementById("mainNavigation");
+
+    navToggle.addEventListener("click", () => {
+      const isExpanded =
+        navToggle.getAttribute("aria-expanded") === "true";
+
+      navToggle.setAttribute("aria-expanded", String(!isExpanded));
+      navToggle.setAttribute(
+        "aria-label",
+        isExpanded ? "Open navigation menu" : "Close navigation menu"
+      );
+
+      mainNavigation.classList.toggle("nav__links--open", !isExpanded);
+    });
+
+    mainNavigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNavigation.classList.remove("nav__links--open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
+  </script>
+</body>
+</html>
 
     <main>
       <section class="section">
