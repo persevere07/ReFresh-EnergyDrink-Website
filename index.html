@@ -30,20 +30,46 @@
     />
   </head>
   <body>
-    <header class="nav">
-      <div class="nav__logo">Re-<span>Fresh</span></div>
-      <nav class="nav__links">
-        <a href="index.html" class="active">Home</a>
-        <a href="flavors.html">Flavors</a>
-        <a href="science.html">Science</a>
-        <a href="reviews.html">Reviews & FAQ</a>
-        <a href="about.html">About</a>
-      </nav>
-      <button class="nav__cta" onclick="goToFlavors()">Shop Now</button>
-      <button class="nav__menu" aria-label="Toggle menu" id="navToggle">
-        <span></span><span></span>
-      </button>
-    </header>
+   ```html
+<header class="nav">
+  <!-- Logo -->
+  <a href="index.html" class="nav__logo" aria-label="Re-Fresh Home">
+    Re-<span>Fresh</span>
+  </a>
+
+  <!-- Navigation Links -->
+  <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="flavors.html">Flavors</a>
+    <a href="science.html">Science</a>
+    <a href="reviews.html">Reviews &amp; FAQ</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- Call to Action -->
+  <button
+    type="button"
+    class="nav__cta"
+    onclick="goToFlavors()"
+  >
+    Shop Now
+  </button>
+
+  <!-- Mobile Menu Toggle -->
+  <button
+    type="button"
+    class="nav__menu"
+    id="navToggle"
+    aria-label="Open navigation menu"
+    aria-controls="navLinks"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+  </button>
+</header>
+```
+
 
     <main>
       <!-- HERO -->
