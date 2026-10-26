@@ -1,4 +1,4 @@
-# Re-Fresh – Front-End E‑Commerce Demo
+
 # Re-Fresh Energy Drink — Modern E-Commerce Landing Page
 
 A fast, responsive, and modern **front-end-only e-commerce landing page** for Re-Fresh Energy Drink, built using **HTML, CSS, and vanilla JavaScript**.
